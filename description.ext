@@ -1,0 +1,20 @@
+#include "locations.hpp"
+#include "scripts\functions.hpp"
+#include "dialogs\dialogs.hpp"
+#include "sounds\sounds.hpp"
+
+__EXEC (MISSION_ROOT = __FILE__ select [0, count __FILE__ - 15])
+
+disabledAI = 1;
+enableDebugConsole = 2;
+onLoadName = "[CO4] Farming Life : Africa";
+onLoadMission = "Police State - Made by Danny and Geari";
+author = "Danny & Geari";
+loadScreen = "images\loading.jpg";
+
+class Header
+{
+	gameType = RPG;
+	minPlayers = 1;
+	maxPlayers = 20;
+};
